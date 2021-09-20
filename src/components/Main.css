@@ -1,0 +1,92 @@
+.container_main {
+  background: white;
+  position: absolute;
+  border-radius: 10px;
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_main .container_illustration img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+.container_main .container_section_details {
+  padding: 20px 30px 20px;
+  text-align: center;
+}
+.container_main .container_section_details h1 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.container_main .container_section_details p.first {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+.container_main .container_section_details .container_section_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+.container_main .container_section_details .container_section_price div {
+  display: flex;
+}
+.container_main .container_section_details .container_section_price div img {
+  width: 28%;
+  height: 28%;
+  margin-right: 15px;
+}
+.container_main .container_section_details .container_section_price div p {
+  font-size: 0.8em;
+  display: flex;
+   justify-content: center;
+  flex-direction: column;
+  color: hsl(224, 23%, 55%);
+}
+
+.container_main
+  .container_section_details
+  .container_section_price
+  div
+  p
+  strong {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 2px;
+}
+.container_main .container_section_details .container_section_price a {
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+.container_main .container_section_details .container_section_price a:hover {
+  font-size: 0.7rem;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.container_main p.cancel {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 0.7rem;
+}
+
+.container_main p.cancel:hover {
+  cursor: pointer;
+}
+
+@media  (min-width:320px) and (max-width:650px){
+    .container_main .container_section_details p.first{
+        margin-bottom: 30px;
+    }
+    .container_main .container_section_details .container_section_price div p {
+        font-size: 0.7em;
+      }
+}
